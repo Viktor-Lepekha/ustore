@@ -18,32 +18,25 @@
             <a href="tel:+380932200957">phone: +380932200957</a>
         </header>
         <div id="subheader">
-            <ul class="breadcrumb">
+           <ul class="breadcrumb">
                 <li><a href="#">Home</a></li>
                 <li><a href="#">Catalog</a></li>
             </ul>
-            <span class="shoppingcart"></span>
+            <span class="shoppingcart"><img src="assets/images/cart.png" alt="shopping cart icon"><span id="count">0</span></span>
+            <div id="cart"></div>
         </div>
         <div id="filters">
            
-            <h2>Select company</h2>
-            <input type="checkbox" id="firm1" name="firm1" value="Yahya">
-            <label for="firm1">Yahya</label><br>
-            <input type="checkbox" id="firm2" name="firm2" value="Palka">
-            <label for="firm2">Palka</label><br>
-            <input type="checkbox" id="firm3" name="firm3" value="Abarid">
-            <label for="firm3">Abarid</label><br>
-            <input type="checkbox" id="firm4" name="firm4" value="Other">
-            <label for="firm4">Other</label><br>
-         <h2>Select type</h2>
-         <input type="radio" id="standard" name="type" value="standard">
-         <label for="standard">Standard</label>
-         <input type="radio" id="mini" name="type" value="mini">
-         <label for="mini">Mini</label>   
-         <h2>Select price</h2>
-         <input type="range" id="price" name="price" min="500" max="2500"><br>
-        
-    </div>
+            <h3>Filter by:</h3>
+            <div id="categories">
+            <div><input type="checkbox" class="filter" id="cup" >
+            <label for="">Has a bowl</label></div>
+            <div><input type="checkbox" class="filter" id="coloredFlask">
+            <label for="">Colored flask</label></div>
+            <div><input type="checkbox" class="filter" id="kaloud" >
+            <label for="">Has a kaloud</label></div>
+            </div>
+        </div>
     <div id="wares">
         <div class="list" id="list"></div>
 		<div class="pagenumbers" id="pagination"></div>
